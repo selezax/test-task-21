@@ -22,6 +22,13 @@ class DatabaseSeeder extends Seeder
             'plan_id' => fn() => Plan::inRandomOrder()->first()->id,
             'password' => bcrypt('password'),
         ]);
+        User::factory()->create([
+            'is_admin' => false,
+            'name' => 'user',
+            'email' => 'user@local.local',
+            'plan_id' => fn() => Plan::inRandomOrder()->first()->id,
+            'password' => bcrypt('password'),
+        ]);
 
 
         User::factory(10)->create([

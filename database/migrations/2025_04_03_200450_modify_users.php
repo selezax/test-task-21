@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->foreignId('plan_id')
                 ->nullable()
-                ->constrained('plan')
+                ->constrained('plans')
                 ->onDelete('set null');
         });
     }

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section("content")
-    @dump(session('status'))
     <x-card>
         <x-slot:title>
             <h3><i class="fa fa-user"></i> {{ __('Login') }}</h3>
