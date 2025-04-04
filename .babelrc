@@ -1,0 +1,9 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": "> 0.5%, last 5 versions, Firefox ESR, not dead",
+            "useBuiltIns": "entry",
+            "corejs": 3
+        }]
+    ]
+}

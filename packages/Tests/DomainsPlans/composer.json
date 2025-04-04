@@ -1,0 +1,30 @@
+{
+    "name": "tests/domainsplans",
+    "description": "Tests Domains plans",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tests\\DomainsPlans\\DomainsPlansServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Tests\\DomainsPlans\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Seleznyov A"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
